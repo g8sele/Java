@@ -1,0 +1,38 @@
+package exercicio_6;
+
+import java.util.Scanner;
+
+public class Exercicio_6 {
+
+    
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+        float[] media = new float[1]; // Apenas uma média para todas as notas
+        float[] notas = new float[4]; // Armazenamento de 4 notas
+      
+        System.out.println("Seja Bem-Vind@ a visualização de notas e média do Colégio Doramal!");
+        System.out.println("Preencha com suas notas:");
+
+        float soma = 0;
+        for (int i = 0; i < 3; i++) {
+            System.out.printf("Digite sua %dª nota: \n", i + 1);
+            notas[i] = scanner.nextFloat();
+            soma += notas[i];
+        }
+
+        media[0] = soma / 3;
+        
+        System.out.println("__________________________________________________________________________");
+                    System.out.printf("Media Final: %.2f\n", media[0]);
+                    
+        System.out.println("__________________________________________________________________________");
+                    if (media[0] > 7) {
+                        System.out.println("Parabens, voce foi aprovado!");
+                    } else if (media[0] >= 5) {
+                        System.out.println("Que PENA, voce esta de recuperacao!");
+                    } else {
+                        System.out.println("Infelizmente, voce foi reprovado!");
+                    }
+    }
+    
+}

@@ -1,0 +1,54 @@
+package exercicio_6_3;
+
+import java.util.Scanner;
+
+
+public class Exercicio_6_3 {
+
+    
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+         int numero;
+         
+        do {            
+        System.out.print("Digite um número inteiro de 1 a 5: ");
+        System.out.println();
+        System.out.println("Aperte 6 para SAIR!");
+        numero = scanner.nextInt();
+       
+        switch (numero) {
+            case 1:
+                System.out.println("O numero 1 em palavras é: UM");
+                break;
+                
+            case 2:
+                System.out.println("O numero 2 em palavras é: DOIS");
+                break;
+                
+            case 3:
+                System.out.println("O numero 3 em palavras é: TRES");
+                break;
+                
+            case 4:
+                System.out.println("O numero 4 em palavras é: QUATRO");
+                break;
+                
+            case 5:
+                System.out.println("O numero 5 em palavras é: CINCO");
+                break;
+                
+              case 6:
+                  System.out.println("Tchau, Tchau!");
+                break;
+                
+            default:
+                System.out.println("Número inválido, escolha algo de 1 a 5!");
+        }
+        
+        } while (numero != 6);
+       
+   
+        
+        } 
+    
+}

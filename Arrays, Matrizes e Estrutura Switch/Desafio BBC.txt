@@ -1,0 +1,83 @@
+package exercicio_6_2;
+
+import java.util.Scanner;
+
+public class Exercicio_6_2 {
+
+  
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int opcao;
+
+        do {            
+            
+        
+        System.out.println("Bem-vindo ao Banco BBC. Por favor, selecione a transação desejada:");
+        System.out.println("1. Pagar Contas (Boletos e Convênios)");
+        System.out.println("2. Consultar Limite de Cartão");
+        System.out.println("3. Transferência entre contas correntes do BBC");
+        System.out.println("4. Fatura de Cartão de Crédito, Liberação de Cartão e Rastreamento de Cartão");
+        System.out.println("5. Consulta de saldos da conta corrente e poupança");
+        System.out.println("6. Extratos (conta corrente, poupança e fundos de investimento)");
+        System.out.println("7. Consultar Código IBAN e SWIFT");
+        System.out.println("8. Renegociação de dívidas");
+        System.out.println("9. 2ª via do boleto de negociação");
+        System.out.println("10. Pagar o IPVA");
+        System.out.println("11. SAIR");
+
+        System.out.print("Digite o número da opção desejada: ");
+        opcao = scanner.nextInt();
+
+        switch (opcao) {
+            case 1:
+                System.out.println("Você selecionou Pagar Contas (Boletos e Convênios).");
+               
+                break;
+            case 2:
+                System.out.println("Você selecionou Consultar Limite de Cartão.");
+               
+                break;
+            case 3:
+                System.out.println("Você selecionou Transferência entre contas correntes do BBC.");
+                
+                break;
+            case 4:
+                System.out.println("Você selecionou Fatura de Cartão de Crédito, Liberação de Cartão e Rastreamento de Cartão.");
+                
+                break;
+            case 5:
+                System.out.println("Você selecionou Consulta de saldos da conta corrente e poupança.");
+                
+                break;
+            case 6:
+                System.out.println("Você selecionou Extratos (conta corrente, poupança e fundos de investimento).");
+               
+                break;
+            case 7:
+                System.out.println("Você selecionou Consultar Código IBAN e SWIFT.");
+                
+                break;
+            case 8:
+                System.out.println("Você selecionou Renegociação de dívidas.");
+                
+                break;
+            case 9:
+                System.out.println("Você selecionou 2ª via do boleto de negociação.");
+               
+                break;
+            case 10:
+                System.out.println("Você selecionou Pagar o IPVA.");
+                break;
+                
+            case 11:
+                System.out.println("Obrigad@ por usar nossos serviços, tchau, tchau!");
+                break;
+                
+            default:
+                System.out.println("Opção inválida. Por favor, selecione uma opção válida.");
+        }
+        
+        } while (opcao != 11);
+    }
+    
+}

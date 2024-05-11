@@ -1,0 +1,54 @@
+package exercicio_6_6;
+
+import java.util.Scanner;
+
+public class Exercicio_6_6 {
+
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+         int numero;
+         
+        do {  
+        System.out.println("RECEBA UM DORAMA PELO GÊNERO ESCOLHIDO!");
+        System.out.println("1. Terror");
+        System.out.println("2. Ficção");
+        System.out.println("3. Drama");
+        System.out.println("4. Romance");
+        System.out.println("5. Ação");
+        System.out.println("6. SAIR");
+        System.out.println("O que deseja: ");
+        numero = scanner.nextInt();
+       
+        switch (numero) {
+            case 1:
+                System.out.println("O jogo da morte, disponivel no prime video!");
+                break;
+                
+            case 2:
+                System.out.println("A lenda do mar azul, disponivel no viki!");
+                break;
+                
+            case 3:
+                System.out.println("Rainha das lagrimas, disponivel na netflix!");
+                break;
+                
+            case 4:
+                System.out.println("Pousando no amor, disponivel na netflix");
+                break;
+            
+            case 5:
+                System.out.println("Big Mouth, disponivel na disneyplus");
+                break;
+                
+            case 6:
+                System.out.println("Tchau, Tchau!");
+                break;
+                
+            default:
+                System.out.println("Número inválido, escolha algo de 1 a 5!");
+        }
+        
+        } while (numero != 6);
+    }
+    
+}

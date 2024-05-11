@@ -1,0 +1,13 @@
+package aula4_2;
+    
+    import java.util.Locale;
+    
+    public class Aula4_1 {
+
+
+    public static void main(String[] args) {
+        Locale defaultLocale = Locale.getDefault();
+         System.out.println("Idioma padrão do sistema: " + defaultLocale.getDisplayName());
+    }
+    
+}

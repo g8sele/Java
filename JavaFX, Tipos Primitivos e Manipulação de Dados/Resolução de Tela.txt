@@ -1,0 +1,14 @@
+package aula4_2;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+public class Aula4_2 {
+
+    public static void main(String[] args) {
+      Toolkit toolkit = Toolkit.getDefaultToolkit();
+       Dimension screenSize = toolkit.getScreenSize();
+       System.out.println("Resolução da tela: " + screenSize.width + "x" + screenSize.height);
+    }
+    
+}

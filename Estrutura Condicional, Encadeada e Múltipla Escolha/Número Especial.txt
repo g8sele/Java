@@ -1,0 +1,51 @@
+package exercicio_5;
+
+import java.util.Scanner;
+
+
+public class Exercicio_5 {
+
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+         int numero;
+         
+        do {  
+        System.out.println("ESCOLHA UM NUMERO E RECEBA UMA SORTE");
+        System.out.println("ALGO DE 1 A 5");
+        System.out.println("6. SAIR");
+        System.out.println("O que deseja: ");
+        numero = scanner.nextInt();
+       
+        switch (numero) {
+            case 1:
+                System.out.println("VOCE CONSEGUIRÁ UM BOM EMPREGO BREVE");
+                break;
+                
+            case 2:
+                System.out.println("SE RECOMPENSAR NAO FAZ MAU");
+                break;
+                
+            case 3:
+                System.out.println("NAO PULE REFEICOES OU FICARA DOENTE");
+                break;
+                
+            case 4:
+                System.out.println("O AMOR DE SUA VIDA ESTA MAIS PROXIMO DE VOCE");
+                break;
+            
+            case 5:
+                System.out.println("OUVIR ALGUEM FAZ VOCE SE ENTENDER");
+                break;
+                
+            case 6:
+                System.out.println("ATE A PROXIMA");
+                break;
+                
+            default:
+                System.out.println("Número inválido, escolha algo de 1 a 5!");
+        }
+        
+        } while (numero != 6);
+    }
+    
+}

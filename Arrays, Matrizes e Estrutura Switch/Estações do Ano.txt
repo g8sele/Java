@@ -1,0 +1,45 @@
+package exercicio_6_5;
+
+import java.util.Scanner;
+
+public class Exercicio_6_5 {
+
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+         int numero;
+         
+        do {            
+        System.out.print("Digite um número inteiro de 1 a 4: ");
+        System.out.println();
+        System.out.println("Aperte 5 para SAIR!");
+        numero = scanner.nextInt();
+       
+        switch (numero) {
+            case 1:
+                System.out.println("Estação do Ano: OUTONO!");
+                break;
+                
+            case 2:
+                System.out.println("Estação do Ano: INVERNO!");
+                break;
+                
+            case 3:
+                System.out.println("Estação do Ano: PRIMAVERA!");
+                break;
+                
+            case 4:
+                System.out.println("Estação do Ano: VERÃO!");
+                break;
+                
+            case 5:
+                System.out.println("Tchau, Tchau!");
+                break;
+                
+            default:
+                System.out.println("Número inválido, escolha algo de 1 a 4!");
+        }
+        
+        } while (numero != 5);
+    }
+    
+}
